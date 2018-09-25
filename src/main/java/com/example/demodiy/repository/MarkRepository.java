@@ -1,6 +1,7 @@
 package com.example.demodiy.repository;
 
 import com.example.demodiy.model.Mark;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Repository
 public class MarkRepository {
     private Map<Mark.Subject, List<Integer>> markMap = new HashMap<>();
 
